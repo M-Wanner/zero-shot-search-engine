@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+venv/
+.env
+
+node_modules/
+package-lock.json
+
+backend/data/images/*
+backend/data/*.bin
+backend/data/*.json
+!backend/data/images/.gitkeep
