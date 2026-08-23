@@ -1,0 +1,12 @@
+{
+  "name": "visual-search-frontend",
+  "version": "1.0.0",
+  "description": "Node.js Frontend Server for Multimodal Visual Search",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

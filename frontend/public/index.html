@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Visual Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Zero-Shot Search Engine</h1>
+            <p>Powered by OpenCLIP, FAISS, FastAPI & Node.js</p>
+        </header>
+
+        <section class="search-box">
+            <input type="text" id="searchInput" placeholder="Search by text (e.g. 'a cat sleeping on a car')...">
+            
+            <span class="divider">OR</span>
+
+            <!-- Verstecktes File-Input mit gestyltem Custom-Label -->
+            <div class="file-upload-wrapper">
+                <input type="file" id="imageInput" accept="image/*" class="hidden-file-input">
+                <label for="imageInput" class="custom-file-btn">
+                    📷 Choose Image
+                </label>
+            </div>
+
+            <button id="searchBtn">Search</button>
+        </section>
+
+        <!-- Vorschau-Bereich für das hochgeladene Bild -->
+        <div id="imagePreviewContainer" class="preview-container hidden">
+            <div class="preview-badge">
+                <img id="imagePreview" src="" alt="Selected image">
+                <span id="fileNameDisplay">image.jpg</span>
+                <button id="removeImgBtn" title="Remove image">&times;</button>
+            </div>
+        </div>
+
+        <div id="loader" class="hidden">Searching vectors...</div>
+
+        <section id="results" class="grid-container"></section>
+    </div>
+
+    <!-- Lightbox Modal für vergrößerte Bildansicht -->
+    <div id="imageModal" class="modal hidden">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
