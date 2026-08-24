@@ -51,12 +51,10 @@ input[type="text"]:focus { border-color: #3498db; }
     font-size: 0.85rem;
 }
 
-/* verstecktes natives File Input */
 .hidden-file-input {
     display: none;
 }
 
-/* Styled Upload Button */
 .custom-file-btn {
     display: inline-flex;
     align-items: center;
@@ -92,7 +90,6 @@ button#searchBtn {
 
 button#searchBtn:hover { background-color: #2980b9; }
 
-/* Vorschau & Remove Badge */
 .preview-container {
     display: flex;
     margin-bottom: 1.5rem;
@@ -188,7 +185,6 @@ button#searchBtn:hover { background-color: #2980b9; }
 .hidden { display: none !important; }
 #loader { text-align: center; font-size: 1.2rem; color: #3498db; margin: 2rem 0; }
 
-/* Lightbox Modal */
 .modal {
     position: fixed;
     z-index: 1000;
