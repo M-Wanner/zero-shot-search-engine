@@ -70,7 +70,7 @@ node server.js
 The following examples demonstrate the tool generated from 5000 images of the MS COCO Validation Dataset.
 
 ### Text to Image Query Search
-* Input: `a cat sleeping on a car`
+* Input: `a cat sitting on a car`
 * Output:
 ![Text to Image](assets/text-to-image-example.png)
 
